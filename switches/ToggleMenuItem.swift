@@ -17,15 +17,13 @@ class ToggleMenuItem: NSMenuItem {
     init(toggleable:Toggleable) {
         originalTitle = toggleable.title
         self.toggleable = toggleable
-        super.init(title: toggleable.title, action: #selector(self.toggle), keyEquivalent: "")
+        super.init(title: toggleable.title, action: #selector(self.toggle), keyEquivalent: toggleable.title)
         self.onOff = shell(toggleable.statusCommand) == 0
         self.title = getToggleTitle(onOff: onOff)
+        self.target = self
     }
     
     override init(title: String, action: Selector?, keyEquivalent: String) {
-//        originalTitle = title
-//        toggleable = Toggleable(title: "",statusCommand: "",startCommand: "",stopCommand: "")
-//        super.init(title: title, action: action, keyEquivalent: keyEquivalent)
         fatalError("not implemented, use toggleable constructor")
     }
     

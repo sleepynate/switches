@@ -25,12 +25,14 @@ class StatusMenuController: NSObject {
         statusItem.button?.image = icon
         statusItem.menu = statusMenu
         
+        statusMenu.autoenablesItems = true
+        
         statusMenu.addItem(NSMenuItem.separator())
         
         let chunk = Toggleable(title: "chunkwm",
                                statusCommand: "/usr/local/Homebrew/bin/brew services list | grep \"chunkwm.*started\" &> /dev/null",
-                               startCommand: "/usr/local/Homebrew/bin/brew services chunkwm start",
-                               stopCommand: "/usr/local/Homebrew/bin/brew services chunkwm stop")
+                               startCommand: "/usr/local/Homebrew/bin/brew services start chunkwm",
+                               stopCommand: "/usr/local/Homebrew/bin/brew services stop chunkwm")
         
         for i in [chunk] {
             let item : ToggleMenuItem = ToggleMenuItem(toggleable: i)
