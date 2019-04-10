@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5879F065225E449200C4B465 /* Toggleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5879F064225E449200C4B465 /* Toggleable.swift */; };
+		58B895BF223AFF8F00E4B5CC /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B895BD223AFF8F00E4B5CC /* StatusMenuController.swift */; };
+		58B895C0223AFF8F00E4B5CC /* ToggleMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B895BE223AFF8F00E4B5CC /* ToggleMenuItem.swift */; };
 		58BBF0EC223AD62D00371DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBF0EB223AD62D00371DD5 /* AppDelegate.swift */; };
 		58BBF0EE223AD62D00371DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58BBF0ED223AD62D00371DD5 /* Assets.xcassets */; };
 		58BBF0F1223AD62D00371DD5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BBF0EF223AD62D00371DD5 /* MainMenu.xib */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5879F064225E449200C4B465 /* Toggleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggleable.swift; sourceTree = "<group>"; };
+		58B895BD223AFF8F00E4B5CC /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		58B895BE223AFF8F00E4B5CC /* ToggleMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleMenuItem.swift; sourceTree = "<group>"; };
 		58BBF0E8223AD62D00371DD5 /* switches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = switches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BBF0EB223AD62D00371DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58BBF0ED223AD62D00371DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 		58BBF0EA223AD62D00371DD5 /* switches */ = {
 			isa = PBXGroup;
 			children = (
+				58B895BD223AFF8F00E4B5CC /* StatusMenuController.swift */,
+				5879F064225E449200C4B465 /* Toggleable.swift */,
+				58B895BE223AFF8F00E4B5CC /* ToggleMenuItem.swift */,
 				58BBF0EB223AD62D00371DD5 /* AppDelegate.swift */,
 				58BBF0ED223AD62D00371DD5 /* Assets.xcassets */,
 				58BBF0EF223AD62D00371DD5 /* MainMenu.xib */,
@@ -251,6 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B895BF223AFF8F00E4B5CC /* StatusMenuController.swift in Sources */,
+				5879F065225E449200C4B465 /* Toggleable.swift in Sources */,
+				58B895C0223AFF8F00E4B5CC /* ToggleMenuItem.swift in Sources */,
 				58BBF0EC223AD62D00371DD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
