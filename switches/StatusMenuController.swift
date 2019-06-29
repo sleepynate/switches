@@ -29,12 +29,15 @@ class StatusMenuController: NSObject {
         
         statusMenu.addItem(NSMenuItem.separator())
         
-        let chunk = Toggleable(title: "chunkwm",
-                               statusCommand: "/usr/local/Homebrew/bin/brew services list | grep \"chunkwm.*started\" &> /dev/null",
-                               startCommand: "/usr/local/Homebrew/bin/brew services start chunkwm",
-                               stopCommand: "/usr/local/Homebrew/bin/brew services stop chunkwm")
-        
-        for i in [chunk] {
+        let chunk = Toggleable(title: "tiling",
+                               statusCommand: "/usr/local/Homebrew/bin/brew services list | grep \"yabai.*started\" &> /dev/null",
+                               startCommand: "/usr/local/Homebrew/bin/brew services start yabai",
+                               stopCommand: "/usr/local/Homebrew/bin/brew services stop yabai")
+        let skhd = Toggleable(title: "key bindings",
+                              statusCommand: "/usr/local/Homebrew/bin/brew services list | grep \"skhd.*started\" &> /dev/null",
+                              startCommand: "/usr/local/Homebrew/bin/brew services start skhd",
+                              stopCommand: "/usr/local/Homebrew/bin/brew services stop skhd")
+        for i in [chunk, skhd] {
             let item : ToggleMenuItem = ToggleMenuItem(toggleable: i)
             statusMenu.addItem(item)
         }
